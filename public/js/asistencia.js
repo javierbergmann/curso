@@ -27,8 +27,9 @@ button.onclick = function () {
     ___________AUSENTES: ${DIAS - alumnos[aux][1]}<br>
     `;
     if ((DIAS - alumnos[aux][1]) > LIBRE) {
-      resultado.innerHTML += "<b style='color: red'>ALUMNO LIBRE</b> <br><br>"
+      resultado.innerHTML += "<b style='color: red'>ALUMNO LIBRE</b> <br>"
     };
+    resultado.innerHTML += "<br>"
   }
 
 
