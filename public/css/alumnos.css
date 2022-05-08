@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --danger-over: #88232d;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-famili-roboto: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-famili-roboto);
+}
+
+body {
+    background: var(--light);
+}
+
+.header{
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header .header__h1{
+    font-size: 1em;
+    color: var(--danger);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header .header__nav{
+    background: var(--danger);
+    width: 100%;
+}
+
+.header .header__nav nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .header__nav nav ul li{
+    color: #ccc;
+}
+
+.header .header__nav nav ul li a{
+ display: block;
+ text-decoration: none;
+ color: #ccc;
+ font-weight: 500;
+ text-transform: uppercase;
+ font-size: 15px;
+ text-align: center;
+ height: 100%;
+ padding: 20px 15px;
+}
+
+.header .header__nav nav ul li:hover{
+    background-color: var(--danger-over);
+}
+
+.section div{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.section div button{
+    height: 75px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    width: 250px;
+}

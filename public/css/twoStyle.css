@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+:root{
+    --verde: #28a745;
+    --teal: #20c997;
+    --gris_clarito: #f5f5f5;
+    --celeste: #3366ff;
+    --azul-oscuro: #000099;
+    --naranja-oscuro: #c75204;
+    --color01: #dd5c40;
+    --color01_neg: #f2d6d2;
+    --color02: #cbd94e;
+    --color02_neg: #f3f2d4; 
+    --color03: ##4fd453;
+    --color03_neg: #d9f1d6;
+    --color04: #56d1c1;
+    --color04_neg: #d5f0eb;
+    --color05: #5e77c9;
+    --color05_neg: #d6dfee;
+    --color06: #aa67c8;
+    --color06_neg:#e6d8ec;
+
+}
+
+h1{
+    background-color: red;
+    padding: 50px;
+    text-align: center;
+    display: inline-block;
+    margin: 10PX;
+    border-radius: 10px;
+    line-height: 1px;
+}
+
+body{
+    text-align: center;
+    background-color: var(--teal);
+}
+
+.p4{
+    padding: 2em;
+}
+
+.m4{
+    margin: 4em;
+}
+
+.caja2{
+   /* display: -ms-flexbox;*/
+  display: flex;
+ /* -ms-flex-wrap: wrap;*/
+  flex-wrap: wrap;
+ /* -ms-flex-align: center;*/
+  align-items: center;
+ /* -ms-flex-pack: justify;*/
+  justify-content: space-between;
+  background: blanchedalmond;
+}
+
+.container{
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    outline: 10px red;
+}
+
+.caja{
+   /* text-align: center;*/
+    background-color: black;
+    color: azure;
+}
+
+.caja-footer{
+    background-color: var(--verde);
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+.barraNav{
+    background-color: blueviolet;
+}
+
+.navLeft{
+    text-align: left;
+}
+
+.navRight{
+    text-align:right;
+
+}
+
+.justifyStart{
+    justify-content:start;
+}
+
+.justifyEnd{
+    justify-content: end;
+}
+
+.barraNav__il{
+    display: inline;
+}
+
+.cajaLogin{
+    margin: auto;
+    padding: 20px;
+    /*margin: 0 20px;*/
+    width: 250px;
+    background-color: darksalmon;
+    box-shadow: 10px 5px 25px 0 rgb(24, 90, 145);
+    border-radius: 15px;
+}
+
+.caja1{
+    background: lightcoral;
+    height: 100px;
+    width: 100px;
+}
+
+.caja2{
+    background: blue;
+    height: 100px;
+    width: 100px;
+}
+
+.caja3{
+    background: yellow;
+    height: 100px;
+    width: 100px;
+}
+
+.caja4{
+    background: lightskyblue;
+    height: 100px;
+    width: 100px;
+}

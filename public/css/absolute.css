@@ -1,0 +1,72 @@
+*{
+    background: lightcyan;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    background: blue;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.p10{
+    padding: 10px;
+}
+
+.contenedor{
+    background: blue;
+    margin:  10px 25px;
+    height: 450px;
+    width: 450px;
+    position: relative;
+}
+
+.caja1{
+    text-align: center;
+    color: blue;
+    padding: 25px 0;
+    position: absolute;
+    background: greenyellow;
+    height: 100px;
+    width: 100px;
+ 
+}
+
+.caja2{
+    position: absolute;
+    background: greenyellow;
+    height: 100px;
+    width: 100px;
+    right: 0;
+}
+
+.caja3{
+    position: absolute;
+    background: greenyellow;
+    height: 100px;
+    width: 100px;
+    right: 0;
+    bottom: 0;
+}
+
+.caja4{
+    position: absolute;
+    background: greenyellow;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+}
+
+.caja5{
+    position: absolute;
+    background: yellow;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

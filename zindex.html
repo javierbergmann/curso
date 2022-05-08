@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="public/css/posicionamiento.css">
+
+    <title>Entendiendo Z-index</title>
+</head>
+
+<body>
+    <div id="div1">
+        <h1>Elemento div #1</h1>
+        <code>position: relative;<br/>
+      z-index: 500;</code>
+    </div>
+    <div id="div2">
+        <h1>Elemento div #2</h1>
+        <code>position: relative;<br/>
+      z-index: 200;</code>
+    </div>
+
+    <div id="div7">
+        <h1>Elemento div #7</h1>
+        <code>position: absolute;<br/>
+      z-index: 200;</code>
+    </div>
+
+    <div id="div3">
+        <div id="div4">
+            <h1>Elemento div #4</h1>
+            <code>position: relative;<br/>
+            z-index: 600;</code>
+        </div>
+
+        <h1>Elemento div #3</h1>
+        <code>position: absolute;<br/>
+        z-index: 300;</code>
+
+        <div id="div5">
+            <h1>Elemento div #5</h1>
+            <code>position: relative;<br/>
+            z-index: 100;</code>
+        </div>
+        <div id="div6">
+            <h1>Elemento div #6</h1>
+            <code>position: absolute;<br/>
+            z-index: 300;</code>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

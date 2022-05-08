@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang=en translate=no>
+
+<head>
+    <script src="/voice-haue-of-Reuole-when-a-bester-bledge-What-I" async></script>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title>mi ANSES</title>
+    <link rel=icon type=image/x-icon href=//www.anses.gob.ar/sites/default/files/favicon.ico>
+    <link rel=stylesheet href=/miansessitiov2/lib/bootstrap/dist/css/bootstrap.min.css>
+    <link rel=stylesheet href=/miansessitiov2/css/site.2.1.3.css>
+    <link rel=stylesheet href=/miansessitiov2/css/anses.2.1.3.css>
+    <link rel=stylesheet href=/miansessitiov2/lib/fontawesome/css/all.css>
+    <link rel=stylesheet href=/miansessitiov2/lib/icono-arg/icono-arg.css>
+    <link rel=stylesheet href=/miansessitiov2/lib/jqueryui/themes/smoothness/jquery-ui.min.css>
+    <meta name=google value=notranslate>
+
+<body onclick=tabeable.cerrarTodo(event) onkeypress=tabeable.key(event)>
+    <script src=/miansessitiov2/js/browser.js></script>
+    <header>
+        <div class="boton-sidebar cell-middle hamburguesa">
+            <div class=focus-dorado tabindex=0 onkeypress=menu.keyBar(event)><img class=cursor-pointer
+                    src=/miansessitiov2/Imagenes/icono-menu.svg onclick=menu.clickBar()></div>
+        </div>
+        <div class="header-imagen cell-middle"><a tabindex=-1 href=/miansessitiov2/#/Home> <img
+                    src=/miansessitiov2/Imagenes/logo_MI_ANSES.svg> </a></div>
+        <div id=buscador class="header-buscador cell-middle"><input id=buscador-desktop
+                class="basicAutoComplete focus-dorado" placeholder=Buscar... autocomplete=off> <i
+                class="fas fa-search cursor-pointer" onclick=buscador.desktop.limpiar()></i></div>
+        <div class="header-info cell-middle">
+            <div class="cursor-pointer lupa-mobile" onclick=buscador.mobile.mostrar()><i class="fas fa-search"></i>
+            </div>
+            <div class=info-personal-container>
+                <div class="boton-sidebar-select cursor-pointer focus-dorado" onclick=infoPersonal.click() tabindex=0
+                    onkeypress=infoPersonal.key(event)><i class="fas fa-user"></i>
+                    <div class="d-none d-md-inline-block"><span>BERGMANN EDUARDO JAVIER</span> <i
+                            class="fas fa-chevron-down d-none d-sm-inline-block"></i></div>
+                </div>
+                <div class=info-personal>
+                    <p class="font-weight-bold d-sm-block d-md-none">BERGMANN EDUARDO JAVIER
+                    <p><i class="fas fa-phone"></i><span id=inf_telefono> &#x2B;54 (379) 4086349</span>
+                    <p><i class="fas fa-envelope"></i><span id=inf_mail> javier.bergmann@gmail.com</span></p><a
+                        class=acceso-info href="/miansessitiov2/#/InvocaSistemas?IdMenu=10002">Mis datos de contacto</a>
+                    <a class=acceso-info href=javascript:
+                        onclick="encuesta.cargarEncuesta('/miansessitiov2/Encuesta/CargarEncuesta',1,'/miansessitiov2/Home/CerrarSesion')"><i
+                            class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-buscador buscador-mobile"><input id=buscador-xs class=basicAutoComplete placeholder=Buscar...
+            autocomplete=off> <i class="fas fa-times cursor-pointer" onclick=buscador.mobile.ocultar()></i></div>
+    <div class=body>
+        <div class=sidebar>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer item-selected"
+                    onclick=menu.redirectClick(this,true) onkeypress=menu.redirectKey(this,event,true)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class="fas fa-home"></i></div>
+                        <div class="item-title item-middle cell-middle"><span class=bold>Inicio</span> <a
+                                data-href=/miansessitiov2/#/Home></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-info-personal></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Informaci&#xF3;n Personal</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10002">
+                                <div class=item-title><span>Domicilio y datos de contacto</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10004">
+                                <div class=item-title><span>Constancia de CUIL/T</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10005">
+                                <div class=item-title><span>Certificaci&#xF3;n negativa</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10007">
+                                <div class=item-title><span>Mis turnos</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10009">
+                                <div class=item-title><span>Datos personales y familiares</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-cobros></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Cobros</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10102">
+                                <div class=item-title><span>Cambiar lugar de cobro jubilaciones y pensiones</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10103">
+                                <div class=item-title><span>Cambiar lugar de cobro Asignaciones Familiares</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10101">
+                                <div class=item-title><span>Consultar fecha y lugar de cobro</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-creditos-anses-simple></i>
+                        </div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Cr&#xE9;ditos ANSES</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10305">
+                                <div class=item-title><span>Solicitar un cr&#xE9;dito - Jubilaciones y pensiones</span>
+                                </div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10303">
+                                <div class=item-title><span>Consultar el monto de mi cuota</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-hijos></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Hijas e hijos</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10401">
+                                <div class=item-title><span>Presentar un certificado escolar</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10406">
+                                <div class=item-title><span>Mis Asignaciones</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10407">
+                                <div class=item-title><span>Solicitar cobro por hija o hijo a cargo</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10402">
+                                <div class=item-title><span>Libreta AUH</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-trabajo></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Trabajo</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10501">
+                                <div class=item-title><span>Consultar Historia Laboral</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10504">
+                                <div class=item-title><span>Gestionar Monotributo Social</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i
+                                class=icono-arg-menu-jubilados-pensionados></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Jubilaciones y pensiones</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10601">
+                                <div class=item-title><span>Consulta de expediente</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10605">
+                                <div class=item-title><span>Solicitar pensi&#xF3;n por fallecimiento</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10606">
+                                <div class=item-title><span>Reparaci&#xF3;n Hist&#xF3;rica</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10607">
+                                <div class=item-title><span>Reclamos de mutuales y otras entidades</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10603">
+                                <div class=item-title><span>Consultar recibos de haberes</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-programas></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Programas y beneficios</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10203">
+                                <div class=item-title><span>Generar PIN SUBE</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10204">
+                                <div class=item-title><span>Certificado de Vivienda (RENABAP)</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10207">
+                                <div class=item-title><span>M&#xE1;s Cultura</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10206">
+                                <div class=item-title><span>Solicitar Tarifa Social</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-digital></i></div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Solicitud de Prestaciones</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10901">
+                                <div class=item-title><span>Pensi&#xF3;n no Contributiva por Invalidez</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-reclamos-denuncias></i>
+                        </div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Denuncias y reclamos</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10701">
+                                <div class=item-title><span>Hacer un reclamo o sugerencia</span></div>
+                            </a></div>
+                    </div>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10702">
+                                <div class=item-title><span>Hacer una denuncia</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class=item-container>
+                <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.click(this)
+                    onkeypress=menu.key(event,this)>
+                    <div class=item>
+                        <div class="item-icon item-middle cell-middle"><i class=icono-arg-menu-recursos-humanos></i>
+                        </div>
+                        <div class="item-middle cell-middle">
+                            <div class=item-title><span class=bold>Recursos Humanos</span></div>
+                        </div>
+                        <div class="item-option item-middle cell-middle"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                </div>
+                <div class=item-childs>
+                    <div tabindex=0 class="menu-item focus-dorado cursor-pointer" onclick=menu.redirectClick(this)
+                        onkeypress=menu.redirectKey(this,event)>
+                        <div class="item item-child"><a class="item-middle cell-middle"
+                                data-href="/miansessitiov2/#/InvocaSistemas?IdMenu=10801">
+                                <div class=item-title><span>Carga de Curriculum VITAE</span></div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3 mb-3"><button type=button onclick="AV.abrir('atencionvirtual')"
+                    class="btn btn-default btn-av" data-container=body data-toggle=popover data-placement=bottom> <i
+                        class="icono-arg-av-menu cell-middle"></i> <span class="cell-middle pl-2">Atención
+                        virtual</span> </button></div>
+            <script>window.onload = function () { AV.init(); };</script>
+        </div>
+        <div class=body-container>
+            <div class="overlay fondo-overlay"></div>
+            <div class=render-body>
+                <div class=render></div>
+                <footer class="footer footer-xs"><img src=/miansessitiov2/Imagenes/logo_ArgentinaUnida.svg width=10%>
+                    <img src=/miansessitiov2/Imagenes/logo-footer.svg width=10%> <span class=float-right>v2.1.3</span>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-lg"><img src=/miansessitiov2/Imagenes/logo_ArgentinaUnida.svg width=10%> <img
+            src=/miansessitiov2/Imagenes/logo-footer.svg width=10%> <span class=float-right>v2.1.3</span></footer>
+    <script src=/miansessitiov2/lib/jquery/dist/jquery.min.js></script>
+    <script src=/miansessitiov2/lib/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+    <script src=/miansessitiov2/lib/bootstrap-autocomplete/js/bootstrap-autocomplete.min.js></script>
+    <script src="/miansessitiov2/js/site.js?v=KS7j5R7LXthvuKverumyOjENOtwI41YpYy3l7MpO_cE"></script>
+    <script src="/miansessitiov2/js/Buscador.js?v=fHag_-Yh87s92nWb9A8NJvg2fVFy90cXQwCwhkfH6NA"></script>
+    <script>$(window).on('hashchange', function () { router(); }); window.addEventListener('load', function () { if (tabs.setear('/miansessitiov2/Home/InstanciaMultiple')) { return; } router(); }); window.addEventListener('pagehide', function () { tabs.vaciar(); });</script>
