@@ -27,9 +27,23 @@ const factorial= function fac(n=0){
      todo este condicional se puede resumir con el condicional ternario:
      condicion ? valor si verdadero : valor si falso
      return n<2 ? 1 : n*fac(n-1)
-     */
+     */  
+}
 
-     
+function printResult(r){
+    console.log("El resultado es: ", r)
+}
+
+const operaciones= (a, b, pr)=>{
+    console.log("--------------------------------------------");
+    console.log("Vamos a Sumar ", a, "+", b);
+    pr((a+b));
+    console.log("Vamos a Restar ", a, "-", b);
+    pr((a-b));
+    console.log("Vamos a Multiplicar ", a, "*", b);
+    pr((a*b));
+    console.log("Vamos a Dividir ", a, "/", b);
+    pr((a/b));
 }
 
 console.info("Sumamos");
@@ -49,5 +63,6 @@ console.log(numero3);
 console.info("Ahora llamamos a la funcion anónima para obtener el factorial");
 numero3=factorial(3);
 console.log(numero3);
+operaciones(150, 268, printResult);
 
 
