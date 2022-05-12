@@ -21,7 +21,7 @@
     </header>
     <section class="container">
         <div class="form-container">
-            <div class="form-container__title bg-indigo">
+            <div class="form-container__title">
                 <div>Alta de Alumno</div>
                 
             </div>
@@ -29,30 +29,30 @@
                 <form action="">
                     <div>
                         <div class="group">
-                            <label for="txtDNI">DNI</label>
+                            <label for="txtDNI">DNI: </label>
                             <input class="form-control" type="text" id="txtDNI">
                         </div>
                         <div class="group">
-                            <label for="txtApellido">Apellido</label>
+                            <label for="txtApellido">Apellido: </label>
                             <input class="form-control" type="text" id="txtApellido">
                         </div>
                         <div class="group">
-                            <label for="txtNombres">Nombres</label>
+                            <label for="txtNombres">Nombres: </label>
                             <input class="form-control" type="text" id="txtNombres">
                         </div>
                         <div class="group">
-                            <label for="txtDomicilio">Domicilio</label>
+                            <label for="txtDomicilio">Domicilio: </label>
                             <input class="form-control" type="text" id="txtDomicilio">
                         </div>
                         <div class="group">
-                            <label>Sexo</label>
+                            <label>Sexo: </label>
                             <input type="radio" id="txtMasculino" name="txtSexo" value="M">
                             <label for="txtMasculino">Masculino</label>
                             <input type="radio" id="txtFemenino" name="txtSexo" value="F">
                             <label for="txtFemenino">Femenino</label>
                         </div>
                         <div class="group">
-                            <label for="txtCiclo">Ciclo</label>
+                            <label for="txtCiclo">Ciclo: </label>
                             <select class="form-control" name="txtCiclo" id="txtCiclo">
                                 <option value="JARDIN">Jardín</option>
                                 <option value="PRIMARIO" selected>Primario</option>
@@ -62,14 +62,16 @@
                         </div>
 
                     </div>
-                    <div class="buttons">
-                        <button>Grabar</button>
-                        <button>Cancelar</button>
+                    <div class="form-buttons">
+                        <button class="btn btn-success" id="btnGrabar">Grabar</button>
+                        <button class="btn btn-danger" id="btnCancelar">Cancelar</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <script src="../../public/js/alumno.js"></script>
 </body>
 
 </html>
