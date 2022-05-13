@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <title>JavaScript</title>
 
 </head>
+
 <body>
     <header>
         <h1>
             JavaScript
         </h1>
     </header>
-    <script src="public/js/primero.js"></script>
+    <section>
+        <form action="javascript.html" id="frmContact" method="post">
+            <div class="frm">
+                <div class="frm__title">
+                    Formulario de Contacto
+                </div>
+                <div class="frm__body">
+                    <div class="group">
+                        <label for="txtApellido">Apellido: </label>
+                        <input type="text" name="txtApellido" id="txtApellido">
+                    </div>
+                    <div class="group">
+                        <label for="txtNombres">Nombres: </label>
+                        <input type="text" name="txtNombres" id="txtNombres">
+                    </div>
+                    <div class="group">
+                        <label for="txtTelefono">Telefono: </label>
+                        <input type="text" name="txtTelefono" id="txtTelefono">
+                    </div>
+                    <div class="group">
+                        <label for="txtMail">Mail: </label>
+                        <input type="email" name="txtMail" id="txtMail">
+                    </div>
+                    <div class="group">
+                        <label for="txtReferencia">Referencia: </label>
+                        <select name="txtReferencia" id="txtReferencia">
+                            <option value="SW">Servidores Web</option>
+                            <option value="JS">JavaScript</option>
+                            <option value="PY">Python</option>
+                            <option value="MY">MySQL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="frm__footer">
+                    <div>
+                        <button id="btnSave">Grabar</button>
+                        <button id="btnCancel">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="public/js/poo.js"></script>
+    <script src="public/js/validar.js"></script>
 
 </body>
+
 </html>
