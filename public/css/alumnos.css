@@ -201,11 +201,12 @@ label {
     font-size: 15px;
     text-align: center;
     height: 100%;
-    padding: 20px 15px;
+    padding: 0px 15px;
 }
 
-.header .header__nav nav ul li:hover {
+.header .header__nav nav ul li a:hover{
     background-color: var(--danger-over);
+    color: blue;
 }
 
 .section div {
